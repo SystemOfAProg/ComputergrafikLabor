@@ -1,576 +1,1167 @@
 #VRML V2.0 utf8
 
-Background {skyColor 1.0 1.0 1.0}
+Background {skyColor 0 0 0}
 
-Group{
+# =============================================================================================
+#		Snowy-Boi I
+# =============================================================================================
+
+Transform {
 	children [
-		# ============================ Body Basic ============================
-		Group {
+		Group{
 			children [
-				# ============================ Bottom ============================
-				Transform {
-				  children [
-					Shape {
-						 appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/snow.jpg"
+				# ============================ Body Basic ============================
+				Group {
+					children [
+						# ============================ Bottom ============================
+						Transform {
+						  children [
+							Shape {
+								 appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								 }
+								 geometry Sphere {
+									radius 0.75
+								 }
 							}
-						 }
-						 geometry Sphere {
-							radius 0.75
-						 }
-					}
-				  ]
-				  translation 0 0 0
-				}
-				# ============================ Body ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/snow.jpg"
+						  ]
+						  translation 0 0 0
+						}
+						# ============================ Body ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.6
+								}
 							}
+						  ]
+						  translation 0 1 0
 						}
-						geometry Sphere {
-							radius 0.6
+						# ============================ Head ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.4
+								}
+							}
+						  ]
+						  translation 0 1.8 0
 						}
-					}
-				  ]
-				  translation 0 1 0
+					]
 				}
+
+				# ============================ Face ============================
+				Group {
+					children [
+						# ============================ Nose ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/carrot.jpg"
+									}
+								}
+								geometry Cone {
+									bottomRadius 0.1
+									height 0.6
+								}
+							}
+						  ]
+						  translation 0 1.8 0.4
+						  rotation 1 0 0 1.5
+						}
+						# ============================ Eye Left ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/lava.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.05
+								}
+							}
+						  ]
+						  translation -0.175 1.9 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Eye Right ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/lava.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.05
+								}
+							}
+						  ]
+						  translation 0.175 1.9 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 1 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0.175 1.7 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 2 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0.1 1.66 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 3 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0 1.64 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 4 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation -0.175 1.7 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 5 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation -0.1 1.66 0.37
+						  scale 1 1 0.5
+						}
+					]
+				}
+
 				# ============================ Head ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/snow.jpg"
-							}
-						}
-						geometry Sphere {
-							radius 0.4
-						}
-					}
-				  ]
-				  translation 0 1.8 0
-				}
-			]
-		}
-
-		# ============================ Face ============================
-		Group {
-			children [
-				# ============================ Nose ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/carrot.jpg"
-							}
-						}
-						geometry Cone {
-							bottomRadius 0.1
-							height 0.6
-						}
-					}
-				  ]
-				  translation 0 1.8 0.4
-				  rotation 1 0 0 1.5
-				}
-				# ============================ Eye Left ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.05
-						}
-					}
-				  ]
-				  translation -0.175 1.9 0.35
-				  scale 1 1 0.5
-				}
-				# ============================ Eye Right ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.05
-						}
-					}
-				  ]
-				  translation 0.175 1.9 0.35
-				  scale 1 1 0.5
-				}
-				# ============================ Mouth 1 ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-				  ]
-				  translation 0.175 1.7 0.35
-				  scale 1 1 0.5
-				}
-				# ============================ Mouth 2 ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-				  ]
-				  translation 0.1 1.66 0.37
-				  scale 1 1 0.5
-				}
-				# ============================ Mouth 3 ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-				  ]
-				  translation 0 1.64 0.37
-				  scale 1 1 0.5
-				}
-				# ============================ Mouth 4 ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-				  ]
-				  translation -0.175 1.7 0.37
-				  scale 1 1 0.5
-				}
-				# ============================ Mouth 5 ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-				  ]
-				  translation -0.1 1.66 0.37
-				  scale 1 1 0.5
-				}
-			]
-		}
-
-		# ============================ Head ============================
-		Group {
-			children [
-				# ============================ Cylinder ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/hat.jpg"
-							}
-						}
-						geometry Cylinder {
-							radius 0.3
-							height 0.6
-						}
-					}
-				  ]
-				  translation 0 2.2 0
-				}
-				# ============================ Base ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/hat.jpg"
-							}
-						}
-						geometry Cylinder {
-							radius 0.5
-							height 0.01
-						}
-					}
-				  ]
-				  translation 0 2.07 0
-				}
-				# ============================ Hutkrempe ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/scarf.jpg"
-							}
-						}
-						geometry Cylinder {
-							radius 0.31
-							height 0.15
-						}
-					}
-				  ]
-				  translation 0 2.15 0
-				}
-			]
-		}
-
-		# ============================ Hals ============================
-		Group {
-			children [
-				# ============================ Schal ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/scarf.jpg"
-							}
-						}
-						geometry Cylinder {
-							radius 0.35
-							height 0.2
-						}
-					}
-				  ]
-				  translation 0 1.5 0
-				}
-				# ============================ Schal ============================
-				Transform {
-				  children [
-					Shape {
-						appearance Appearance {
-							material Material {}
-							texture ImageTexture {
-								url "textures/scarf.jpg"
-							}
-						}
-						geometry Cylinder {
-							radius 0.35
-							height 0.2
-						}
-					}
-				  ]
-				  translation 0 1.5 0
-				}
-			]
-		}
-
-		# ============================ Buttons ============================
-		Group {
-			children [
-				# ============================ Button 1 ============================
-				Transform {
+				Group {
 					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 1.35 0.49
-					scale 1 1 0.5
-				}
-				# ============================ Button 2 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 1.2 0.57
-					scale 1 1 0.5
-				}
-				# ============================ Button 3 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 1.05 0.6
-					scale 1 1 0.5
-				}
-				# ============================ Button 4 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 0.9 0.59
-					scale 1 1 0.5
-				}
-				# ============================ Button 5 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 0.75 0.55
-					scale 1 1 0.5
-				}
-				# ============================ Button 6 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 0.6 0.465
-					scale 1 1 0.5
-				}
-				# ============================ Button 7 ============================
-				Transform {
-					children [
-					Shape {
-						appearance Appearance {
-							material Material {
-								diffuseColor 0 0 0
-							}
-						}
-						geometry Sphere {
-							radius 0.025
-						}
-					}
-					]
-					translation 0 0.45 0.6
-					scale 1 1 0.5
-				}
-			]
-		}
-
-		# ============================ Arms ============================
-		Group {
-			children [
-
-					# ============================ Part 1 ============================
-					Transform {
-						children [
+						# ============================ Cylinder ============================
+						Transform {
+						  children [
 							Shape {
 								appearance Appearance {
+									material Material {}
 									texture ImageTexture {
-										url "textures/wood_long.jpg"
+										url "textures/hat.jpg"
 									}
 								}
 								geometry Cylinder {
-									radius 0.035
-									height 2
+									radius 0.3
+									height 0.6
 								}
 							}
-						]
-						translation 0 1.25 0
-						rotation 0 0 1 1.57
-					}
-
-					# ============================ Part 2 ============================
-					Transform {
-						children [
+						  ]
+						  translation 0 2.2 0
+						}
+						# ============================ Base ============================
+						Transform {
+						  children [
 							Shape {
 								appearance Appearance {
+									material Material {}
 									texture ImageTexture {
-										url "textures/wood_long.jpg"
+										url "textures/hat.jpg"
 									}
 								}
 								geometry Cylinder {
-									radius 0.035
-									height 0.5
+									radius 0.5
+									height 0.01
 								}
 							}
-						]
-						translation -1.15 1.42 0
-						rotation 0 0 1 0.785
-					}
-
-					# ============================ Part 3 ============================
-					Transform {
-						children [
+						  ]
+						  translation 0 2.07 0
+						}
+						# ============================ Hutkrempe ============================
+						Transform {
+						  children [
 							Shape {
 								appearance Appearance {
+									material Material {}
 									texture ImageTexture {
-										url "textures/wood.jpg"
+										url "textures/scarf.jpg"
 									}
 								}
 								geometry Cylinder {
-									radius 0.035
+									radius 0.31
+									height 0.15
+								}
+							}
+						  ]
+						  translation 0 2.15 0
+						}
+					]
+				}
+
+				# ============================ Hals ============================
+				Group {
+					children [
+						# ============================ Schal ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/scarf.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.35
 									height 0.2
 								}
 							}
-						]
-						translation -1.125 1.5 0
-						rotation 0 0 1 0
-					}
-
-					# ============================ Part 4 ============================
-					Transform {
-						children [
+						  ]
+						  translation 0 1.5 0
+						}
+						# ============================ Schal ============================
+						Transform {
+						  children [
 							Shape {
 								appearance Appearance {
+									material Material {}
 									texture ImageTexture {
-										url "textures/wood.jpg"
+										url "textures/scarf.jpg"
 									}
 								}
 								geometry Cylinder {
-									radius 0.035
+									radius 0.35
 									height 0.2
 								}
 							}
-						]
-						translation -1.2 1.35 0
-						rotation 0 0 1 1.57
-					}
+						  ]
+						  translation 0 1.5 0
+						}
+					]
+				}
 
-					# ============================ Part 5 ============================
-					Transform {
-						children [
+				# ============================ Buttons ============================
+				Group {
+					children [
+						# ============================ Button 1 ============================
+						Transform {
+							children [
 							Shape {
 								appearance Appearance {
 									texture ImageTexture {
-										url "textures/wood_long.jpg"
+										url "textures/coal.jpg"
 									}
 								}
-								geometry Cylinder {
-									radius 0.035
-									height 0.5
+								geometry Sphere {
+									radius 0.025
 								}
 							}
-						]
-						translation 1.15 1.42 0
-						rotation 0 0 1 -0.785
-					}
-
-					# ============================ Part 6 ============================
-					Transform {
-						children [
+							]
+							translation 0 1.35 0.49
+							scale 1 1 0.5
+						}
+						# ============================ Button 2 ============================
+						Transform {
+							children [
 							Shape {
 								appearance Appearance {
 									texture ImageTexture {
-										url "textures/wood.jpg"
+										url "textures/coal.jpg"
 									}
 								}
-								geometry Cylinder {
-									radius 0.035
-									height 0.2
+								geometry Sphere {
+									radius 0.025
 								}
 							}
-						]
-						translation 1.125 1.5 0
-						rotation 0 0 1 0
-					}
-
-					# ============================ Part 7 ============================
-					Transform {
-						children [
+							]
+							translation 0 1.2 0.57
+							scale 1 1 0.5
+						}
+						# ============================ Button 3 ============================
+						Transform {
+							children [
 							Shape {
 								appearance Appearance {
 									texture ImageTexture {
-										url "textures/wood.jpg"
+										url "textures/coal.jpg"
 									}
 								}
-								geometry Cylinder {
-									radius 0.035
-									height 0.2
+								geometry Sphere {
+									radius 0.025
 								}
 							}
-						]
-						translation 1.2 1.35 0
-						rotation 0 0 1 1.57
-					}
+							]
+							translation 0 1.05 0.6
+							scale 1 1 0.5
+						}
+						# ============================ Button 4 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.9 0.59
+							scale 1 1 0.5
+						}
+						# ============================ Button 5 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.75 0.55
+							scale 1 1 0.5
+						}
+						# ============================ Button 6 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.6 0.465
+							scale 1 1 0.5
+						}
+						# ============================ Button 7 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.45 0.6
+							scale 1 1 0.5
+						}
+					]
+				}
+
+				# ============================ Arms ============================
+				Group {
+					children [
+
+							# ============================ Part 1 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 2
+										}
+									}
+								]
+								translation 0 1.25 0
+								rotation 0 0 1 1.57
+							}
+
+							# ============================ Part 2 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.5
+										}
+									}
+								]
+								translation -1.15 1.42 0
+								rotation 0 0 1 0.785
+							}
+
+							# ============================ Part 3 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation -1.125 1.5 0
+								rotation 0 0 1 0
+							}
+
+							# ============================ Part 4 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation -1.2 1.35 0
+								rotation 0 0 1 1.57
+							}
+
+							# ============================ Part 5 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.5
+										}
+									}
+								]
+								translation 1.15 1.42 0
+								rotation 0 0 1 -0.785
+							}
+
+							# ============================ Part 6 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation 1.125 1.5 0
+								rotation 0 0 1 0
+							}
+
+							# ============================ Part 7 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation 1.2 1.35 0
+								rotation 0 0 1 1.57
+							}
+
+					]
+				}
 
 			]
 		}
-
 	]
+	translation 1.5 0 0
+}
+
+# =============================================================================================
+#		Snowy-Boi II
+# =============================================================================================
+
+Transform {
+	children [
+		Group{
+			children [
+				# ============================ Body Basic ============================
+				Group {
+					children [
+						# ============================ Bottom ============================
+						Transform {
+						  children [
+							Shape {
+								 appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								 }
+								 geometry Sphere {
+									radius 0.75
+								 }
+							}
+						  ]
+						  translation 0 0 0
+						}
+						# ============================ Body ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.6
+								}
+							}
+						  ]
+						  translation 0 1 0
+						}
+						# ============================ Head ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/snow.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.4
+								}
+							}
+						  ]
+						  translation 0 1.8 0
+						}
+					]
+				}
+
+				# ============================ Face ============================
+				Group {
+					children [
+						# ============================ Nose ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/carrot.jpg"
+									}
+								}
+								geometry Cone {
+									bottomRadius 0.1
+									height 0.6
+								}
+							}
+						  ]
+						  translation 0 1.8 0.4
+						  rotation 1 0 0 1.5
+						}
+						# ============================ Eye Left ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/lava.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.05
+								}
+							}
+						  ]
+						  translation -0.175 1.9 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Eye Right ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/lava.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.05
+								}
+							}
+						  ]
+						  translation 0.175 1.9 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 1 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0.175 1.7 0.35
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 2 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0.1 1.66 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 3 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation 0 1.64 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 4 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation -0.175 1.7 0.37
+						  scale 1 1 0.5
+						}
+						# ============================ Mouth 5 ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+						  ]
+						  translation -0.1 1.66 0.37
+						  scale 1 1 0.5
+						}
+					]
+				}
+
+				# ============================ Head ============================
+				Group {
+					children [
+						# ============================ Cylinder ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/hat.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.3
+									height 0.6
+								}
+							}
+						  ]
+						  translation 0 2.2 0
+						}
+						# ============================ Base ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/hat.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.5
+									height 0.01
+								}
+							}
+						  ]
+						  translation 0 2.07 0
+						}
+						# ============================ Hutkrempe ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/scarf.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.31
+									height 0.15
+								}
+							}
+						  ]
+						  translation 0 2.15 0
+						}
+					]
+				}
+
+				# ============================ Hals ============================
+				Group {
+					children [
+						# ============================ Schal ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/scarf.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.35
+									height 0.2
+								}
+							}
+						  ]
+						  translation 0 1.5 0
+						}
+						# ============================ Schal ============================
+						Transform {
+						  children [
+							Shape {
+								appearance Appearance {
+									material Material {}
+									texture ImageTexture {
+										url "textures/scarf.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.35
+									height 0.2
+								}
+							}
+						  ]
+						  translation 0 1.5 0
+						}
+					]
+				}
+
+				# ============================ Buttons ============================
+				Group {
+					children [
+						# ============================ Button 1 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 1.35 0.49
+							scale 1 1 0.5
+						}
+						# ============================ Button 2 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 1.2 0.57
+							scale 1 1 0.5
+						}
+						# ============================ Button 3 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 1.05 0.6
+							scale 1 1 0.5
+						}
+						# ============================ Button 4 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.9 0.59
+							scale 1 1 0.5
+						}
+						# ============================ Button 5 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.75 0.55
+							scale 1 1 0.5
+						}
+						# ============================ Button 6 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.6 0.465
+							scale 1 1 0.5
+						}
+						# ============================ Button 7 ============================
+						Transform {
+							children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/coal.jpg"
+									}
+								}
+								geometry Sphere {
+									radius 0.025
+								}
+							}
+							]
+							translation 0 0.45 0.6
+							scale 1 1 0.5
+						}
+					]
+				}
+
+				# ============================ Arms ============================
+				Group {
+					children [
+
+							# ============================ Part 1 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 2
+										}
+									}
+								]
+								translation 0 1.25 0
+								rotation 0 0 1 1.57
+							}
+
+							# ============================ Part 2 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.5
+										}
+									}
+								]
+								translation -1.15 1.42 0
+								rotation 0 0 1 0.785
+							}
+
+							# ============================ Part 3 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation -1.125 1.5 0
+								rotation 0 0 1 0
+							}
+
+							# ============================ Part 4 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation -1.2 1.35 0
+								rotation 0 0 1 1.57
+							}
+
+							# ============================ Part 5 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood_long.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.5
+										}
+									}
+								]
+								translation 1.15 1.42 0
+								rotation 0 0 1 -0.785
+							}
+
+							# ============================ Part 6 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation 1.125 1.5 0
+								rotation 0 0 1 0
+							}
+
+							# ============================ Part 7 ============================
+							Transform {
+								children [
+									Shape {
+										appearance Appearance {
+											texture ImageTexture {
+												url "textures/wood.jpg"
+											}
+										}
+										geometry Cylinder {
+											radius 0.035
+											height 0.2
+										}
+									}
+								]
+								translation 1.2 1.35 0
+								rotation 0 0 1 1.57
+							}
+
+					]
+				}
+
+			]
+		}
+	]
+	translation -1.5 0 0
 }
