@@ -432,5 +432,145 @@ Group{
 			]
 		}
 
+		# ============================ Arms ============================
+		Group {
+			children [
+
+					# ============================ Part 1 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood_long.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 2
+								}
+							}
+						]
+						translation 0 1.25 0
+						rotation 0 0 1 1.57
+					}
+
+					# ============================ Part 2 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood_long.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.5
+								}
+							}
+						]
+						translation -1.15 1.42 0
+						rotation 0 0 1 0.785
+					}
+
+					# ============================ Part 3 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.2
+								}
+							}
+						]
+						translation -1.125 1.5 0
+						rotation 0 0 1 0
+					}
+
+					# ============================ Part 4 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.2
+								}
+							}
+						]
+						translation -1.2 1.35 0
+						rotation 0 0 1 1.57
+					}
+
+					# ============================ Part 5 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood_long.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.5
+								}
+							}
+						]
+						translation 1.15 1.42 0
+						rotation 0 0 1 -0.785
+					}
+
+					# ============================ Part 6 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.2
+								}
+							}
+						]
+						translation 1.125 1.5 0
+						rotation 0 0 1 0
+					}
+
+					# ============================ Part 7 ============================
+					Transform {
+						children [
+							Shape {
+								appearance Appearance {
+									texture ImageTexture {
+										url "textures/wood.jpg"
+									}
+								}
+								geometry Cylinder {
+									radius 0.035
+									height 0.2
+								}
+							}
+						]
+						translation 1.2 1.35 0
+						rotation 0 0 1 1.57
+					}
+
+			]
+		}
+
 	]
 }
