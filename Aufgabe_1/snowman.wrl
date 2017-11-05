@@ -1147,7 +1147,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 1
+													height 0.995
 												}
 											}
 										]
@@ -1177,7 +1177,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.5
+													height 0.495
 												}
 											}
 										]
@@ -1207,7 +1207,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.2
+													height 0.195
 												}
 											}
 										]
@@ -1237,7 +1237,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.2
+													height 0.195
 												}
 											}
 										]
@@ -1279,7 +1279,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 1
+													height 0.995
 												}
 											}
 										]
@@ -1309,7 +1309,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.5
+													height 0.495
 												}
 											}
 										]
@@ -1339,7 +1339,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.2
+													height 0.195
 												}
 											}
 										]
@@ -1369,7 +1369,7 @@ Transform {
 												}
 												geometry Cylinder {
 													radius 0.033
-													height 0.2
+													height 0.195
 												}
 											}
 										]
