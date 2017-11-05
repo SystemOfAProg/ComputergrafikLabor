@@ -429,15 +429,28 @@ Transform {
 											# ============================ Right Lower Arm ============================
 											Transform {
 												children [
+													# ===== Outer Part =====
 													Shape {
 														appearance Appearance {
 															texture ImageTexture {
-																url "textures/wood_long.jpg"
+																url "textures/wood_long_chopped.png"
 															}
 														}
 														geometry Cylinder {
 															radius 0.035
 															height 1
+														}
+													}
+													# ===== Inner Part =====
+													Shape {
+														appearance Appearance {
+															texture ImageTexture {
+																url "textures/inner_wood.jpg"
+															}
+														}
+														geometry Cylinder {
+															radius 0.033
+															height 0.995
 														}
 													}
 												]
@@ -448,15 +461,28 @@ Transform {
 											# ============================ Right Upper Arm ============================
 											Transform {
 												children [
+												# ===== Outer Part =====
 													Shape {
 														appearance Appearance {
 															texture ImageTexture {
-																url "textures/wood_long.jpg"
+																url "textures/wood_long_chopped.png"
 															}
 														}
 														geometry Cylinder {
 															radius 0.035
 															height 0.5
+														}
+													}
+													# ===== Inner Part =====
+													Shape {
+														appearance Appearance {
+															texture ImageTexture {
+																url "textures/inner_wood.jpg"
+															}
+														}
+														geometry Cylinder {
+															radius 0.033
+															height 0.495
 														}
 													}
 												]
@@ -467,15 +493,28 @@ Transform {
 											# ============================ Right Upper Finger ============================
 											Transform {
 												children [
+												 # ===== Outer Part =====
 													Shape {
 														appearance Appearance {
 															texture ImageTexture {
-																url "textures/wood.jpg"
+																url "textures/wood_chopped.png"
 															}
 														}
 														geometry Cylinder {
 															radius 0.035
 															height 0.2
+														}
+													}
+													# ===== Inner Part =====
+													Shape {
+														appearance Appearance {
+															texture ImageTexture {
+																url "textures/inner_wood.jpg"
+															}
+														}
+														geometry Cylinder {
+															radius 0.033
+															height 0.195
 														}
 													}
 												]
@@ -486,10 +525,11 @@ Transform {
 											# ============================ Right Lower Finger ============================
 											Transform {
 												children [
+													# ===== Outer Part =====
 													Shape {
 														appearance Appearance {
 															texture ImageTexture {
-																url "textures/wood.jpg"
+																url "textures/wood_chopped.png"
 															}
 														}
 														geometry Cylinder {
@@ -497,9 +537,21 @@ Transform {
 															height 0.2
 														}
 													}
+													# ===== Inner Part =====
+													Shape {
+														appearance Appearance {
+															texture ImageTexture {
+																url "textures/inner_wood.jpg"
+															}
+														}
+														geometry Cylinder {
+															radius 0.033
+															height 0.195
+														}
+													}
 												]
 												translation 1.2 1.35 0
-												rotation 0 0 1 1.57
+												rotation 0 0 1 4.65
 											}
 
 										]
@@ -516,15 +568,28 @@ Transform {
 									# ============================ Left Lower Arm ============================
 									Transform {
 										children [
+											# ===== Outer Part =====
 											Shape {
 												appearance Appearance {
 													texture ImageTexture {
-														url "textures/wood_long.jpg"
+														url "textures/wood_long_chopped.png"
 													}
 												}
 												geometry Cylinder {
 													radius 0.035
 													height 1
+												}
+											}
+											# ===== Inner Part =====
+											Shape {
+												appearance Appearance {
+													texture ImageTexture {
+														url "textures/inner_wood.jpg"
+													}
+												}
+												geometry Cylinder {
+													radius 0.033
+													height 0.95
 												}
 											}
 										]
@@ -535,15 +600,28 @@ Transform {
 									# ============================ Left Upper Arm ============================
 									Transform {
 										children [
+											# ===== Outer Part =====
 											Shape {
 												appearance Appearance {
 													texture ImageTexture {
-														url "textures/wood_long.jpg"
+														url "textures/wood_long_chopped.png"
 													}
 												}
 												geometry Cylinder {
 													radius 0.035
 													height 0.5
+												}
+											}
+											# ===== Inner Part =====
+											Shape {
+												appearance Appearance {
+													texture ImageTexture {
+														url "textures/inner_wood.jpg"
+													}
+												}
+												geometry Cylinder {
+													radius 0.033
+													height 0.495
 												}
 											}
 										]
@@ -554,15 +632,28 @@ Transform {
 									# ============================ Left Upper Finger ============================
 									Transform {
 										children [
+											# ===== Outer Part =====
 											Shape {
 												appearance Appearance {
 													texture ImageTexture {
-														url "textures/wood.jpg"
+														url "textures/wood_chopped.png"
 													}
 												}
 												geometry Cylinder {
 													radius 0.035
 													height 0.2
+												}
+											}
+											# ===== Inner Part =====
+											Shape {
+												appearance Appearance {
+													texture ImageTexture {
+														url "textures/inner_wood.jpg"
+													}
+												}
+												geometry Cylinder {
+													radius 0.033
+													height 0.195
 												}
 											}
 										]
@@ -573,15 +664,28 @@ Transform {
 									# ============================ Left Lower Finger ============================
 									Transform {
 										children [
+											# ===== Outer Part =====
 											Shape {
 												appearance Appearance {
 													texture ImageTexture {
-														url "textures/wood.jpg"
+														url "textures/wood_chopped.png"
 													}
 												}
 												geometry Cylinder {
 													radius 0.035
 													height 0.2
+												}
+											}
+											# ===== Inner Part =====
+											Shape {
+												appearance Appearance {
+													texture ImageTexture {
+														url "textures/inner_wood.jpg"
+													}
+												}
+												geometry Cylinder {
+													radius 0.033
+													height 0.195
 												}
 											}
 										]
@@ -870,7 +974,7 @@ Transform {
 						  translation 0 2.15 0
 						}
 					]
-					
+
 					translation 0 -0.08 0
 				}
 
@@ -995,12 +1099,12 @@ Transform {
 				# ============================ Arms ============================
 				Group {
 					children [
-					
+
 							# ============================ Left ============================
 							Transform {
 								children [
-								
-								
+
+
 									# ============================ Part 1 ============================
 									Transform {
 										children [
@@ -1076,19 +1180,19 @@ Transform {
 										translation -1.2 1.35 0
 										rotation 0 0 1 1.57
 									}
-								
+
 								]
-								
+
 								translation 0 -0.1 0
 								rotation 0 0 1 0.2
-								
+
 							}
-							
+
 							# ============================ Right ============================
 							Transform {
 								children [
-								
-								
+
+
 									# ============================ Part 1 ============================
 									Transform {
 										children [
@@ -1164,12 +1268,12 @@ Transform {
 										translation 1.2 1.1 0
 										rotation 0 0 1 1.57
 									}
-								
+
 								]
-								
+
 								translation 0.5 -0.1 0
 								rotation 0 0 1 0.3
-								
+
 							}
 
 					]
