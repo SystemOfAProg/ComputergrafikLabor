@@ -154,39 +154,39 @@ Transform {
               point [
                 # Parts from Bottom To Top
                 # ===== 1 =====
-                .86  0 ,  # Bottom Right
-                .14  0 ,  # Bottom Left
-                .14 .52,  # Top Left
-                .86 .52,  # Top Right
+                .43  0 ,  # Bottom Right
+                .07  0 ,  # Bottom Left
+                .07 .52,  # Top Left
+                .43 .52,  # Top Right
 
                 # ===== 2 =====
-                .89 .52,  # Bottom Right
-                .11 .52,  # Bottom Left
-                .11 .66,  # Top Left
-                .89 .66,  # Top Right
+                .45 .52,  # Bottom Right
+                .06 .52,  # Bottom Left
+                .06 .66,  # Top Left
+                .45 .66,  # Top Right
 
                 # ===== 3 =====
-                .86 .66,  # Bottom Right
-                .14 .66,  # Bottom Left
-                .14  .7,  # Top Left
-                .86  .7,  # Top Right
+                .43 .66,  # Bottom Right
+                .07 .66,  # Bottom Left
+                .07  .7,  # Top Left
+                .43  .7,  # Top Right
 
                 # ===== 4 =====
-                .86  .7,  # Bottom Right
-                .14  .7,  # Bottom Left
-                .33 .78,  # Top Left
-                .67 .78,  # Top Right
+                .43  .7,  # Bottom Right
+                .07  .7,  # Bottom Left
+                .17 .78,  # Top Left
+                .34 .78,  # Top Right
 
                 # ===== 5 =====
-                .67 .78,  # Bottom Right
-                .33 .78,  # Bottom Left
-                .33 .83,  # Bottom Left
-                .67 .83,  # Bottom Right
+                .34 .78,  # Bottom Right
+                .17 .78,  # Bottom Left
+                .17 .83,  # Bottom Left
+                .34 .83,  # Bottom Right
 
                 # ===== 6 =====
-                .33 .83,  # Bottom Left
-                .67 .83,  # Bottom Right
-                .5  .96,  # Top
+                .17 .83,  # Bottom Left
+                .34 .83,  # Bottom Right
+                .25 .96,  # Top
               ]
             }
 
