@@ -7,19 +7,11 @@
 # =============================================================================================
 
 Background {
-  skyColor [
-    0.0 0.0 0.2,
-    0.0 0.2 0.5,
-    0.8 0.8 0.8
-  ]
-  skyAngle [0.785, 1.571]
-
-  groundColor [
-    0.1 0.1 0.1,
-    0.3 0.3 0.3,
-    0.5 0.5 0.5
-  ]
-  groundAngle [0.785, 1.571]
+  # bottomUrl "texture_bottom.jpeg"
+  # backUrl "texture_back.jpeg"
+  # rightUrl "texture_right.jpeg"
+  # leftUrl "texture_left.jpeg"
+  # frontUrl "texture_front.jpeg"
 }
 
 # =============================================================================================
@@ -29,11 +21,10 @@ Background {
 Transform {
   children [
 
-    # ========================= Base =========================
-
     Group {
       children [
 
+        # ========================= Big Ben =========================
         Shape {
           appearance	Appearance {
             texture ImageTexture {
@@ -42,6 +33,7 @@ Transform {
           }
           geometry	IndexedFaceSet {
             coord	Coordinate {
+
               point	[ -7.5  0 -7.5,
                        7.5  0 -7.5,
                        7.5  0  7.5,
@@ -78,7 +70,9 @@ Transform {
                      3.25   78  -3.25,
                      3.25   78   3.25,
                     -3.25   78   3.25,
-                        0   91      0  ]}
+                        0   91      0  ]
+
+            }
 
             coordIndex	[ 0, 1, 2, 3,
                                   -1,
@@ -267,13 +261,42 @@ Transform {
 
           }
 
-        }
+        },
 
+        # ========================= Ground =========================
+
+        Transform {
+          children [
+
+            Shape {
+              appearance Appearance {
+                material Material {}
+                  texture ImageTexture {
+                    url "texture_bottom.jpeg"
+                  }
+                }
+                geometry Box {
+                  size 1000.0 40.0 1000.0
+                }
+              }
+
+          ]
+          translation 15 -20 10
+        }
 
       ]
     }
 
 
   ]
-  translation 0 0 -90
+  translation 0 0 0
+}
+
+
+Viewpoint {
+  fieldOfView 0.785398
+  position 0 250 300
+  orientation 1 0 0 -0.7
+  description ""
+  jump TRUE
 }
