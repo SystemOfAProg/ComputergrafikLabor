@@ -7,11 +7,12 @@
 # =============================================================================================
 
 Background {
-  # bottomUrl "texture_bottom.jpeg"
-  # backUrl "texture_back.jpeg"
-  # rightUrl "texture_right.jpeg"
-  # leftUrl "texture_left.jpeg"
-  # frontUrl "texture_front.jpeg"
+  bottomUrl "bottom_texture.jpeg"
+  backUrl  "sky_texture_1.png"
+  rightUrl "sky_texture_4.png"
+  leftUrl  "sky_texture_2.png"
+  frontUrl "sky_texture_3.png"
+  skyColor .51 .66 0.81
 }
 
 # =============================================================================================
